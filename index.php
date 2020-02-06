@@ -756,7 +756,7 @@
                         var hit = FB.Collides(FB.bird, FB.entities[i]);
                         if (hit) {
                             play_sound(soundHit);
-							FB.changeState('game over');
+							FB.changeState('gameover');
 							 break;
                         }
                     }
