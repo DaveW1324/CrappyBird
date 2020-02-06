@@ -509,7 +509,7 @@
             this.img = new Image();
             this.img.src = 'bird.png';
             this.gravity = 0.25;
-            this.width = 100;
+            this.width = 34;
             this.height = 24;
             this.ix = 0;
             this.iy = 0;
@@ -661,7 +661,7 @@
 			this.init = function(){
 				play_sound(soundSwoosh);
 				FB.distance = 0;
-                FB.bg_grad = "day";
+                FB.bg_grad = "night";
                 FB.entities = [];
 				FB.score.taps = FB.score.coins = 0;
                 //Add entities
@@ -756,7 +756,7 @@
                         var hit = FB.Collides(FB.bird, FB.entities[i]);
                         if (hit) {
                             play_sound(soundHit);
-							FB.changeState('UR BAD');
+							FB.changeState('game over');
 							 break;
                         }
                     }
