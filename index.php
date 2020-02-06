@@ -509,7 +509,7 @@
             this.img = new Image();
             this.img.src = 'bird.png';
             this.gravity = 0.25;
-            this.width = 34;
+            this.width = 100;
             this.height = 24;
             this.ix = 0;
             this.iy = 0;
